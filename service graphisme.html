@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portofolio</title>
+    <!--box icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <a href="index.html"><img src="image/identiter.png" class="logo" alt="Logo IssakDigit"></a>
+                    <div class="brand-text">
+                        <div class="brand-title">Portofolio</div>
+                        <div class="brand-sub">Adamou Issaka</div>
+                    </div>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="index.html#header">Accueil</a></li>
+                    <li><a href="index.html#about">A propos</a></li>
+                    <li><a href="index.html#services">Service</a></li>
+                    <li><a href="index.html#portfolio">Projets</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1 class="srv-web">Mes services rendu en <br> <span>Designe</span> <br> Graphisme</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------service graphisme-->
+    
+     <section class="graphisme-section">
+        <div class="section-header">
+            <h2>Mes Services Graphistes</h2>
+            <p>Je donne vie à vos idées avec des créations visuelles percutantes qui captivent votre audience et renforcent votre identité de marque.</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-palette'></i>
+                </div>
+                <h3>Identité Visuelle</h3>
+                <p>Création d'une identité de marque cohérente et mémorable qui vous distingue de la concurrence.</p>
+                <ul class="service-features">
+                    <li>Logo et variations</li>
+                    <li>Carte graphique complète</li>
+                    <li>Choix des couleurs et typographies</li>
+                    <li>Guide d'utilisation de la marque</li>
+                </ul>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-group'></i>
+                </div>
+                <h3>Designe Print</h3>
+                <p>Conception de supports imprimés percutants pour vos campagnes de communication offline.</p>
+                <ul class="service-features">
+                    <li>Brochures et dépliants</li>
+                    <li>Affiches et flyers</li>
+                    <li>Cartes de visite et papeterie</li>
+                    <li>Packaging et étiquettes</li>
+                </ul>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-slider'></i>
+                </div>
+                <h3>Designe Digitale</h3>
+                <p>Création d'interfaces utilisateur attrayantes et intuitives pour vos plateformes digitales.</p>
+                <ul class="service-features">
+                    <li>Maquettes de sites web</li>
+                    <li>Interfaces d'application</li>
+                    <li>Bannières publicitaires</li>
+                    <li>Présentations PowerPoint</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+    </section>
+
+
+    <!--contact-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="Contact-left">
+                    <h1 class="sub-title">Contactez-<span>Moi</span></h1>
+                    <p><i class='bx bx-envelope'></i>issakaadamou613@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i>+227 75192436</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/search/top?q=zoulkifle%20digit" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://wa.me/qr/O7WKP65XPAL3J1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-telegram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="image/Curriculum Vitae (CV).pdf" target="_blank" download class="btn btn2">Telecharger CV</a>
+                </div>
+                <div class="Contact-right">
+                    <form action=https://formspree.io/f/xjkeqpky method="POST">
+                        <input type="text" name="Nom" placeholder="Entrer votre nom" required>
+                        <input type="email" name="Email" placeholder="Entrer votr email" required>
+                        <textarea name="Message" rows="6" placeholder="Entrer votre Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="sendEmail()">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-flex">
+                <span class="copyright-text">&copy; <span id="displayDateYear"></span> Tous droits réservés par <a href="iindex.html">Adamou Issaka</a></span>
+                <a href="#header" class="icon copyright-up" title="Retour en haut"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+    </div>
+        
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        // Responsive nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('open');
+        });
+    </script>
+    <script src="script.js"></script>
+
+    <!--script projet wweb-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

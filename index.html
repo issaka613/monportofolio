@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portofolio</title>
+    <!--box icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <a href="index.html"><img src="image/identiter.png" class="logo" alt="Logo IssakDigit"></a>
+                    <div class="brand-text">
+                        <div class="brand-title">Portofolio</div>
+                        <div class="brand-sub">Adamou Issaka</div>
+                    </div>
+                </div>
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Pojets</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>Hello!</span> je suis Adamou Issaka</p>
+                <h1>Développeur, designer graphique et <br> monteur vidéo pro</h1>
+                <p>passionné par la création de solutions numériques modernes</p>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/Calque 111.png" alt="Photo de Adamou Issaka">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Parlez de <span>Moi</span></h1>
+                    <p>Adamou Issaka est spécialisé dans la création de solutions innovantes pour
+                         accompagner les entreprises dans leur transformation numérique. Ma mission est d’aider
+                          des entreprises à développer leur visibilité en ligne, améliorer leur communication 
+                        et optimiser leurs performances grâce aux outils digitaux modernes..</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Compétence</p>
+                        <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Design graphique</span><br>créations d’identités visuelles</li>
+                            <li><span>Developpement Web & desktop</span><br>Création de site Web et App dynamiques</li>
+                            <li><span>Montage vidéo</span><br>Optimisation du contenu pour les réseaux sociaux</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Communication</span><br>Création des solutions numériques complètes <br> en alliant technique, design et créativité.</li>
+                            <li><span>Programmation</span><br>Automatisation des tâches et développer des solutions adaptées <br> aux besoins des utilisateurs.</li>
+                            <li><span>Montage vidéo</span><br>Structurer une vidéo, améliorer la qualité visuelle et sonore,<br>respecter un brief précis. et l'utilisation d’IA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--service-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span>Mes</span> Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Développement web</h2>
+                    <p>Mes service de graphisme donne vie à vos idées à travers des visuels uniques,
+                         créatifs et impactants.</p>
+                    <a href="service web.html" class="btn1">Voir</a>
+                </div>
+                <div>
+                    <i class='bx bxs-paint'></i>
+                    <h2>Graphisme</h2>
+                    <p>Je transformons vos concepts en créations graphiques percutantes 
+                        qui attirent l’attention et marquent les esprits</p>
+                    <a href="service graphisme.html" class="btn1">Voir</a>
+                </div>
+                <div>
+                    <i class='bx bx-video-recording'></i>
+                    <h2>Création visuelles</h2>
+                    <p>Grâce à une maîtrise des techniques de montage, d’effets visuels et de son, 
+                        je donne à vos vidéos un rendu moderne et impactant.</p>
+                    <a href="service montage video.html" class="btn1">Voir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>Mes</span> Projets</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/2.2.png">
+                    <div class="layer">
+                        <h3>Création Web</h3>
+                        <p>Des solutions web adaptées à vos besoins et à votre budget.</p>
+                        <a href="Pojet web.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/mont.jpg">
+                    <div class="layer">
+                        <h3>Montage vidéos</h3>
+                        <p>transformer vos idées en contenus qui informent, inspirent et convertissent.</p>
+                        <a href="projet montage video.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/adob.jpg">
+                    <div class="layer">
+                        <h3>Conception Affiche</h3>
+                        <p>Des designs modernes et personnalisés, adaptés à votre identité et à vos objectifs. </p>
+                        <a href="projet graphisme.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="Contact-left">
+                    <h1 class="sub-title">Contactez-<span>Moi</span></h1>
+                    <p><i class='bx bx-envelope'></i>issakaadamou613@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i>+227 75192436</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://wa.me/qr/O7WKP65XPAL3J1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-telegram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="image/new cv.pdf" target="_blank" download class="btn btn2">Telecharger CV</a>
+                </div>
+                <div class="Contact-right">
+                    <form action=https://formspree.io/f/xjkeqpky method="POST">
+                        <input type="text" name="Nom" placeholder="Entrer votre nom" required>
+                        <input type="email" name="Email" placeholder="Entrer votr email" required>
+                        <textarea name="Message" rows="6" placeholder="Entrer votre Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="sendEmail()">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-flex">
+                <span class="copyright-text">&copy; <span id="displayDateYear"></span> Tous droits réservés par <a href="iindex.html">Adamou Issaka</a></span>
+                <a href="#header" class="icon copyright-up" title="Retour en haut"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+    </div>
+        
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        // Responsive nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = navMenu.querySelectorAll('a');
+
+        // Ouvrir/fermer le menu
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('open');
+        });
+
+        // Fermer le menu quand on clique sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('open');
+            });
+        });
+
+        // Fermer le menu quand on clique en dehors
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('open');
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
